@@ -15,4 +15,9 @@
 
 Procfile ```web: gunicorn main:app -w 4 -k uvicorn.workers.UvicornWorker```
 
+Deploy to Elastic Beanstalk  
+```eb init --platform python-3.7 make-up-your-app-name --region us-east-1```  
+```eb create make-up-your-environment-name```   
+```eb open```
+
 
